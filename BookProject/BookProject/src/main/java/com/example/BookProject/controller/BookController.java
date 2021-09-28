@@ -22,7 +22,8 @@ public class BookController {
 
     @Autowired
     BookRepository BookRepositoryobj;
-
+    
+    @CrossOrigin(Origins = "http://localhost:3000")
     @RequestMapping("/get")
     public void getBook(@RequestParam String q) throws IOException, JSONException {
 
